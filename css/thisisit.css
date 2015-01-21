@@ -1,14 +1,123 @@
 #logo {
     font-family: 'La Belle Aurore', cursive;
 }
-.jumbotron {
-    margin-bottom: 0px;
-    background-image: url(../img/jumbotronbackground.jpg);
-    background-position: 0% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
+.navbar-brand {
+	font-size: 30px;font-family: 'Permanent Marker', cursive;
 }
- .navbar.transparent.navbar-inverse .navbar-inner {
-   background: rgba(0,0,0,0.4);
+.navbar-custom {
+    background-color: #aaa;
+    background: rgba(0,0,0,0.5);
+    color:#aaa;
+    border-radius:0;`
+}
+.navbar-custom .navbar-nav > li > a {
+    color:white;
+}
+.navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
+	text-decoration: none;
+	background-color: #aaa;
+	background: rgba(0,0,0,0.5);
+}
+
+.navbar-custom .navbar-brand {
+    color:white;
+}
+.meetup-icon {
+	margin-bottom: -15px;
+	margin-top: -15px;
+	height: 30px;
+	width: 40px;
+}
+.mkp-icon {
+	margin-top: -15px;
+	height: 50px;
+	width: 70px;
+}
+/* general styles */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* padded section */
+.pad-section {
+  padding: 50px 0;
+}
+.pad-section img {
+  width: 100%;
+}
+
+/* vertical-centered text */
+.text-vcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.text-vcenter h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+/* additional sections */
+#home {
+  background: url(http://photos3.meetupstatic.com/photos/event/1/e/d/f/highres_433447903.jpeg) no-repeat center center fixed; 
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+
+#who-we-are {
+}
+
+#what-you-get {
+  background-color: #306d9f;
+  color: #ffffff;
+}
+#what-you-get .glyphicon {
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 60px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  vertical-align: middle;
+  width: 140px;
+}
+
+#what-we-offer {
+  background: url(../images/estate.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#what-we-offer .panel {
+  opacity: 0.85;
+}
+
+#google_map {
+  height: 500px;
+}
+footer {
+  padding: 20px 0;
+}
+footer .glyphicon {
+  color: #333333;
+  font-size: 60px;
+}
+footer .glyphicon:hover {
+  color: #306d9f;
 }
