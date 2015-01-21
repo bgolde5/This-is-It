@@ -111,6 +111,22 @@ html, body {
 #google_map {
   height: 500px;
 }
+
+#contact {
+  background-color: #306d9f;
+  color: #ffffff;
+}
+#contact .glyphicon {
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 60px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  vertical-align: middle;
+  width: 140px;
+}
 footer {
   padding: 20px 0;
 }
