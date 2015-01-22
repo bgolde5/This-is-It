@@ -1,11 +1,11 @@
 $(document).ready(function (){
 
   // create a LatLng object containing the coordinate for the center of the map
-  var latlng = new google.maps.LatLng(-33.86455, 151.209);
+  var latlng = new google.maps.LatLng(41.876949, -87.624352);
 
   // prepare the map properties
   var options = {
-    zoom: 15,
+    zoom: 13,
     center: latlng,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     navigationControl: true,
@@ -17,18 +17,46 @@ $(document).ready(function (){
   // initialize the map object
   var map = new google.maps.Map(document.getElementById('google_map'), options);
 
-  // add Marker
-  var marker1 = new google.maps.Marker({
-    position: latlng, map: map
+  //add Event Markers
+  var eventMarkers = [];
+  $.ajax({
+    url:"http://api.meetup.com/events?radius=25.0&order=time&group_urlname=chicagoyoungmen&offset=0&photo-host=public&format=json&page=20&fields=&sig_id=125028852&sig=f392277c2b492128ea2e8d686a3b5647fc648e87",
+    type:'GET',
+    dataType:'JSONP',
+    success: function(response){
+
+      for(i=0; i<response.results.length; i++){
+        eventMarkers[i] = new google.maps.Marker({
+          position: new google.maps.LatLng(response.results[i].venue_lat, response.results[i].venue_lon),
+          map: map
+
+      })
+
+      //add event info window
+            var name = response.results[i].name;
+            var venue_name = response.results[i].venue_name;
+            var address1 = response.results[i].venue_address1;
+            var event_url = response.results[i].event_url;
+            var description = response.results[i].description;
+            var message = '<div id="content"><b>'+name+'</b>'+
+              '<p>Where: '+venue_name+'<br>'+
+              'Address: '+address1+'<br>'+
+              '<a href="'+event_url+'" target="_blank">More Info</a></br>'+
+              description+'</p></div>'
+        addInfoWindow(eventMarkers[i], message);
+    }
+  }
   });
 
-  // add listener for a click on the pin
-  google.maps.event.addListener(marker1, 'click', function() {
-    infowindow.open(map, marker1);
-  });
+  function addInfoWindow(marker, message) {
 
-  // add information window
-  var infowindow = new google.maps.InfoWindow({
-    content:  '<div class="info"><strong>This is my company</strong><br><br>My company address is here<br> 32846 Sydney</div>'
-  });  
+    var infoWindow = new google.maps.InfoWindow({
+      content: message,
+      maxWidth: 600
+    });
+
+    google.maps.event.addListener(marker, 'click', function () {
+    infoWindow.open(map, marker);
+  });
+  }
 });

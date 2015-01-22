@@ -8,7 +8,7 @@
     background-color: #aaa;
     background: rgba(0,0,0,0.5);
     color:#aaa;
-    border-radius:0;`
+    border-radius:0;
 }
 .navbar-custom .navbar-nav > li > a {
     color:white;
@@ -62,7 +62,7 @@ html, body {
 
 /* additional sections */
 #home {
-  background: url(http://photos3.meetupstatic.com/photos/event/1/e/d/f/highres_433447903.jpeg) no-repeat center center fixed; 
+  background: url(http://photos3.meetupstatic.com/photos/event/1/e/d/f/600_433447903.jpeg) no-repeat center center fixed; 
   display: table;
   height: 100%;
   position: relative;
@@ -77,11 +77,11 @@ html, body {
 #who-we-are {
 }
 
-#what-you-get {
-  background-color: #306d9f;
+#what-we-offer {
+  background-color: #506987;
   color: #ffffff;
 }
-#what-you-get .glyphicon {
+#what-we-offer .glyphicon {
   border: 2px solid #FFFFFF;
   border-radius: 50%;
   display: inline-block;
@@ -93,10 +93,9 @@ html, body {
   width: 140px;
 }
 
-#what-we-offer {
+#how-we-do-it {
   background: url(../images/estate.jpg) no-repeat center center fixed; 
   display: table;
-  height: 800px;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
@@ -104,16 +103,22 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
 }
-#what-we-offer .panel {
+#how-it-works {
+	background: url(http://upload.wikimedia.org/wikipedia/commons/0/0c/GoldenGateBridge-001.jpg);
+	background-size: 100%;
+	height:100%;
+}
+
+#how-it-works .panel {
   opacity: 0.85;
 }
 
 #google_map {
-  height: 500px;
+  height: 100%;
 }
 
 #contact {
-  background-color: #306d9f;
+  background-color: #506987;
   color: #ffffff;
 }
 #contact .glyphicon {
@@ -135,5 +140,5 @@ footer .glyphicon {
   font-size: 60px;
 }
 footer .glyphicon:hover {
-  color: #306d9f;
+  color: white;
 }
