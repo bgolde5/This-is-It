@@ -4,6 +4,14 @@
 .navbar-brand {
 	font-size: 30px;font-family: 'Permanent Marker', cursive;
 }
+.navbar {
+  background-color: #506987;
+  background: rgba(0,0,0,0.5);
+}
+.navbar-nav {
+  color: white;
+}
+/*
 .navbar-custom {
     background-color: #aaa;
     background: rgba(0,0,0,0.5);
@@ -21,7 +29,7 @@
 
 .navbar-custom .navbar-brand {
     color:white;
-}
+}*/
 .meetup-icon {
 	margin-bottom: -15px;
 	margin-top: -15px;
