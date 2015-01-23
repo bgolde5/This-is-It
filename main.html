@@ -32,8 +32,8 @@
   <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
@@ -62,18 +62,28 @@
     <!-- first section - Home -->
     <div id="home" class="home">
       <div class="text-vcenter">
-        <h3>Mission Goes Here</h3>
-        <a href="#who-we-are" class="btn btn-default btn-lg">Who We Are</a>
+        <div class="container">
+          <div class="panel panel-default">
+                <div class="panel-body lead">
+                  <h1>Live the life you choose to live</h1>
+                  <h3>Men around the United States are joining our powerful community to create new possibilities in their lives and you can too!</h3>
+                  <a href="#who-we-are" class="btn btn-default btn-lg">Who We Are</a>
+                </div>
+          </div>
+        
+        
+
+      </div>
       </div>
     </div>
     <!-- /first section -->
 
-    <!-- second section - About -->
+    <!-- second section - Who We Are -->
     <div id="who-we-are" class="pad-section">
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <img src="http://photos4.meetupstatic.com/photos/event/d/8/4/9/highres_433195369.jpeg" alt="" />
+            <img src="http://photos4.meetupstatic.com/photos/event/d/8/4/9/highres_433195369.jpeg" alt="" class="img-thumbnail"/>
           </div>
           <div class="col-sm-6 text-center">
             <div class="panel panel-default">
@@ -98,22 +108,22 @@
             <div class="col-sm-3 col-xs-6">
               <i class="glyphicon fa fa-bullhorn"> </i>
               <h4>Powerful Communication Tools</h4>
-              <!-- place description here -->
+              <p>In This is It, you will have the opportunity to practice clear and direct communication in a variety of settings.</p>
             </div>
             <div class="col-sm-3 col-xs-6">
               <i class="glyphicon fa fa-check"> </i>
               <h4>Methods to Achieve Success</h4>
-              <!-- place description here -->
+              <p>Do you have goals? Whether you do or you don't, our community empowers young men to accomplish their goals.</p>
             </div>
             <div class="col-sm-3 col-xs-6">
               <i class="glyphicon fa fa-signal"> </i>
               <h4>Access to a Vast Network</h4>
-              <!-- place description here -->
+              <p>This is It serves a growing community of young men around the United States.</p>
             </div>
             <div class="col-sm-3 col-xs-6">
               <i class="glyphicon fa fa-users"> </i>
               <h4>Lasting Friendships</h4>
-              <!-- place description here -->
+              <p>We provide the foundation for creating strong friendships with young men who wish to see you succeed in life, however you define it.</p>
             </div>
           </div>
         </div>
@@ -168,6 +178,7 @@
       <!-- /google map -->
 
       <!-- footer -->
+      <footer>
       <div id="contact" class="pad-section">
         <div class="container">
           <h2 class="text-center">Contact Us</h2> <hr />
@@ -183,11 +194,15 @@
               <!-- place description here -->
             </div>
             <div class="col-sm-3 col-xs-6">
-              <i class="glyphicon fa fa-google-plus"> </i>
+              <i class="glyphicon fa fa-google-plus"></i>
+            </div>
+            <div>
+            <p class="text-right" style="margin-top: 100px;">Copywrite NAME 2015</a>
             </div>
           </div>
         </div>
       </div>
+    </footer>
       <!-- footer -->
 
       <!-- Bootstrap core JavaScript

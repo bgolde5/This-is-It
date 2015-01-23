@@ -1,15 +1,69 @@
-#logo {
-    font-family: 'La Belle Aurore', cursive;
-}
 .navbar-brand {
 	font-size: 30px;font-family: 'Permanent Marker', cursive;
 }
-.navbar {
+.navbar-default {
   background-color: #506987;
-  background: rgba(0,0,0,0.5);
+  border-color: transparent;
+  background: rgba(80,105,135,0.8);
 }
-.navbar-nav {
-  color: white;
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #fff;
+}
+.navbar-default .navbar-text {
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  text-decoration: none;
+  background-color: #506987;
+  color: #fff;
+  background: rgba(61,80,103,0.5);
+  border-radius:0;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #475d77;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: #475d77;
+}
+.navbar-default .navbar-toggle {
+  border-color: #475d77;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #475d77;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #fff;
+}
+.navbar-default .navbar-link {
+  color: #fff;
+}
+.navbar-default .navbar-link:hover {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #475d77;
+  }
 }
 /*
 .navbar-custom {
@@ -70,7 +124,7 @@ html, body {
 
 /* additional sections */
 #home {
-  background: url(http://photos3.meetupstatic.com/photos/event/1/e/d/f/600_433447903.jpeg) no-repeat center center fixed; 
+  background: url(http://community.sacredfire.org/wp-content/uploads/2012/02/Initiatesfiesya2009-Group-SacredAwakening-NA.jpg) no-repeat center center fixed; 
   display: table;
   height: 100%;
   position: relative;
@@ -80,6 +134,10 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
   color: white;
+}
+#home .panel{
+  opacity: 0.85;
+  color:black;
 }
 
 #who-we-are {
@@ -114,7 +172,7 @@ html, body {
 #how-it-works {
 	background: url(http://upload.wikimedia.org/wikipedia/commons/0/0c/GoldenGateBridge-001.jpg);
 	background-size: 100%;
-	height:100%;
+	height:75%;
 }
 
 #how-it-works .panel {
@@ -122,7 +180,7 @@ html, body {
 }
 
 #google_map {
-  height: 100%;
+  height: 75%;
 }
 
 #contact {
@@ -133,20 +191,18 @@ html, body {
   border: 2px solid #FFFFFF;
   border-radius: 50%;
   display: inline-block;
-  font-size: 60px;
-  height: 140px;
-  line-height: 140px;
+  font-size: 30px;
+  height: 70px;
+  line-height: 70px;
   text-align: center;
   vertical-align: middle;
-  width: 140px;
-}
-footer {
-  padding: 20px 0;
+  width: 70px;
 }
 footer .glyphicon {
-  color: #333333;
+  color: white;
   font-size: 60px;
 }
 footer .glyphicon:hover {
+  background-color: #768fae;
   color: white;
 }
