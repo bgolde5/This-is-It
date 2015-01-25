@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-    <link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+  <link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
 
-    <title>This is It</title>
+  <title>This is It</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/jumbotron.css" rel="stylesheet">
-    <link href="css/thisisit.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!-- Custom styles for this template -->
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/thisisit.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- attach Javascripts -->
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
-    <script src="js/main.js"></script>
+  <!-- attach Javascripts -->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
+  <script src="js/main.js"></script>
 
-  </head>
+</head>
 
-  <body>
+<body data-spy="scroll" data-target=".navbar-default">
 
-    <!-- navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+  <!-- navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -45,165 +45,221 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li><a href="#who-we-are">Who We Are</a></li>
-          <li><a href="#what-we-offer">What We Offer</a></li>
-          <li><a href="#how-it-works">How It Works</a></li>
-          <li><a href="#google_map">Where To Find Us</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a role="presentation" href="#who-we-are">Who We Are</a></li>
+          <li><a role="presentation" href="#what-we-offer">What We Offer</a></li>
+          <li><a role="presentation" href="#how-it-works">How It Works</a></li>
+          <li><a role="presentation" href="#where-to-find-us">Where To Find Us</a></li>
+          <li><a role="presentation" href="#contact">Contact Us</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="http://www.meetup.com/chicagoyoungmen" target="_blank"><img class="meetup-icon" src="img/meetup-icon.png"/></a></li>
+          <li><a data-toggle="collapse" data-target=".navbar-collapse" href="http://www.meetup.com/chicagoyoungmen" target="_blank"><img class="meetup-icon" src="img/meetup-icon.png"/></a></li>
         </ul>
       </div><!--/.navbar-collapse -->
     </div>
-    </nav>
-    <!-- end navbar -->
+  </nav>
+  <!-- end navbar -->
 
-    <!-- first section - Home -->
-    <div id="home" class="home">
-      <div class="text-vcenter">
-        <div class="container">
-          <div class="panel panel-default">
-                <div class="panel-body lead">
-                  <h1>Live the life you choose to live</h1>
-                  <h3>Men around the United States are joining our powerful community to create new possibilities in their lives and you can too!</h3>
-                  <a href="#who-we-are" class="btn btn-default btn-lg">Who We Are</a>
-                </div>
-          </div>
-        
-        
-
-      </div>
-      </div>
-    </div>
-    <!-- /first section -->
-
-    <!-- second section - Who We Are -->
-    <div id="who-we-are" class="pad-section">
+  <!-- first section - Main -->
+  <div id="home" class="home">
+    <div class="text-vcenter">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <img src="http://photos4.meetupstatic.com/photos/event/d/8/4/9/highres_433195369.jpeg" alt="" class="img-thumbnail"/>
+        <div class="panel panel-default">
+          <div class="panel-body lead">
+            <h1>Live the life you choose to live.</h1>
+            <h3>Men around the United States are joining our powerful community to create new possibilities in their lives and you can too!</h3>
+            <a href="#who-we-are" class="btn btn-default btn-lg">Who We Are</a>
           </div>
-          <div class="col-sm-6 text-center">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h2 class="panel-titler">Who We Are</h2>
-              </div>
-              <div class="panel-body lead">
-                We are about creating life long friendships, having fun with peers, and winning at life. We provide young men with the opportunity to be actively supported, challenged to excel in their careers, encouraged to strengthen and build new relationships, motivated to achieve personal goals, and more. We are a group of young men, ages 18-35ish, who cheer each other on and don't take each other's bullshit at the same time. In this group we truly look out for each other and want to do the same with you. If you're interested, we welcome young men from all walks of life.
-              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /first section -->
+
+  <!-- second section - Who We Are -->
+  <div id="who-we-are" class="pad-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="http://photos4.meetupstatic.com/photos/event/d/8/4/9/highres_433195369.jpeg" alt="" class="img-thumbnail"/>
+        </div>
+        <div class="col-sm-6 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-titler">Who We Are</h2>
+            </div>
+            <div class="panel-body lead">
+              We are about creating life long friendships, having fun with peers, and winning at life. We provide young men with the opportunity to be actively supported, challenged to excel in their careers, encouraged to strengthen and build new relationships, motivated to achieve personal goals, and more. We are a group of young men, ages 18-35ish, who cheer each other on and don't take each other's bullshit at the same time. In this group we truly look out for each other and want to do the same with you. If you're interested, we welcome young men from all walks of life.
             </div>
           </div>
         </div>
       </div>
     </div>
-      <!-- /second section -->
+  </div>
+  <!-- /second section -->
 
-      <!-- third section - Services -->
-      <div id="what-we-offer" class="pad-section">
-        <div class="container">
-          <h2 class="text-center">What We Offer</h2><hr />
-          <div class="row text-center">
-            <div class="col-sm-3 col-xs-6">
-              <i class="glyphicon fa fa-bullhorn"> </i>
-              <h4>Powerful Communication Tools</h4>
-              <p>In This is It, you will have the opportunity to practice clear and direct communication in a variety of settings.</p>
+  <!-- third section - What We Offer -->
+  <div id="what-we-offer" class="pad-section">
+    <div class="container">
+      <h2 class="text-center">What We Offer</h2><hr />
+      <div class="row text-center">
+        <div class="col-sm-3 col-xs-6">
+          <i class="glyphicon fa fa-bullhorn"> </i>
+          <h4>Powerful Communication Tools</h4>
+          <p>In This is It, you will have the opportunity to practice clear and direct communication in a variety of settings.</p>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <i class="glyphicon fa fa-check"> </i>
+          <h4>Methods to Achieve Success</h4>
+          <p>Do you have goals? Whether you do or you don't, our community empowers young men to accomplish their goals.</p>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <i class="glyphicon fa fa-signal"> </i>
+          <h4>Access to a Vast Network</h4>
+          <p>This is It serves a growing community of young men around the United States.</p>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <i class="glyphicon fa fa-users"> </i>
+          <h4>Lasting Friendships</h4>
+          <p>We provide the foundation for creating strong friendships with young men who wish to see you succeed in life.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /third section -->
+
+  <!-- fourth section - How It Works -->
+  <div id="how-it-works" class="pad-section">
+    <div class="container">
+      <h2 class="text-center">How It Works</h2>
+      <div class="row">
+        <h3 class="text-center">Our community is broken down into mulitple levels of involvement.</h3>
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">Social</h2>
             </div>
-            <div class="col-sm-3 col-xs-6">
-              <i class="glyphicon fa fa-check"> </i>
-              <h4>Methods to Achieve Success</h4>
-              <p>Do you have goals? Whether you do or you don't, our community empowers young men to accomplish their goals.</p>
+            <div class="panel-body lead">
+              Social is all about having fun, meeting new people, exploring the city, and more. We believe fun is an important aspect to building a strong community!
             </div>
-            <div class="col-sm-3 col-xs-6">
-              <i class="glyphicon fa fa-signal"> </i>
-              <h4>Access to a Vast Network</h4>
-              <p>This is It serves a growing community of young men around the United States.</p>
+            <div class="panel-footer">
+              <b style="color:purple">Level 1</b>
             </div>
-            <div class="col-sm-3 col-xs-6">
-              <i class="glyphicon fa fa-users"> </i>
-              <h4>Lasting Friendships</h4>
-              <p>We provide the foundation for creating strong friendships with young men who wish to see you succeed in life, however you define it.</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">Group</h2>
+            </div>
+            <div class="panel-body lead">
+              Group is the time to set new goals or refine old ones, learn powerful communication skills, create new habits that will unlock new possibilities, and more.
+            </div>
+            <div class="panel-footer">
+              <b style="color:red">Level 1</b>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">Service</h2>
+            </div>
+            <div class="panel-body lead">
+              We believe that a fundamental aspect of community is giving back. Service is all about participating in local community projects.
+            </div>
+            <div class="panel-footer">
+              <b style="color:green">Level 1</b>
             </div>
           </div>
         </div>
       </div>
-      <!-- /third section -->
-
-      <!-- fourth section - Information -->
-      <div id="how-it-works" class="pad-section">
-        <div class="container">
-          <h2 class="text-center">How It Works</h2>
-          <div class="row">
-            <p class="text-center">Our community is brokwn down into three key aspects: Social, Group, and Service.</p>
-            <div class="col-sm-4">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h2 class="panel-title">Social</h2>
-                </div>
-                <div class="panel-body lead">
-                  Social is all about having fun, meeting new people, exploring the city, and more. We believe fun is an important aspect to building a strong community!
-                </div>
-              </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">Retreat</h2>
             </div>
-            <div class="col-sm-4">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h2 class="panel-title">Group</h2>
-                </div>
-                <div class="panel-body lead">
-                  Group is the time to set new goals or refine old ones, learn powerful communication skills, create new habits that will unlock new possibilities, and more.
-                </div>
-              </div>
+            <div class="panel-body lead">
+              Retreat is the time to step out of your everyday life and gather your thoughts. Retreat consists of weekend or longer destination events such as camping or renting a cabin for the weekend.
             </div>
-            <div class="col-sm-4">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h2 class="panel-title">Service</h2>
-                </div>
-                <div class="panel-body lead">
-                  We believe that a fundamental aspect of community is giving back. Service is all about participating in local community projects.
-                </div>
-              </div>
+            <div class="panel-footer">
+              <b style="color:purple">Level 2</b>
             </div>
-
           </div>
         </div>
-      </div>
-      <!-- /fourth section -->
-
-
-      <!-- google map -->
-      <div id="google_map"></div>
-      <!-- /google map -->
-
-      <!-- footer -->
-      <footer>
-      <div id="contact" class="pad-section">
-        <div class="container">
-          <h2 class="text-center">Contact Us</h2> <hr />
-          <div class="row text-center">
-            <div class="col-sm-3 col-xs-6">
-              <i class="glyphicon fa fa-envelope"> </i>
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">Weekend</h2>
             </div>
-            <div class="col-sm-3 col-xs-6">
-              <i class="glyphicon fa fa-facebook"> </i>
+            <div class="panel-body lead">
+              Weekend is an extension of group. It's two day powerful experience that provides tools to help you further enhance your relationships, deepen your communication, have breakthroughs in your career, and more.
             </div>
-            <div class="col-sm-3 col-xs-6">
-              <i class="glyphicon fa fa-twitter"> </i>
-              <!-- place description here -->
+            <div class="panel-footer">
+              <b style="color:red">Level 2</b>
             </div>
-            <div class="col-sm-3 col-xs-6">
-              <i class="glyphicon fa fa-google-plus"></i>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">Create</h2>
             </div>
-            <div>
-            <p class="text-right" style="margin-top: 100px;">Copywrite NAME 2015</a>
+            <div class="panel-body lead">
+              Create is the next step after Service. In create you will begin the process of designing your own community service project that you can bring into the world.
+            </div>
+            <div class="panel-footer">
+              <b style="color:green">Level 2</b>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-      <!-- footer -->
+    </div>
+  </div>
+</div>
+</div>
+<!-- /fourth section -->
+
+<!-- fifth section - Where To Find Us -->
+<div id="where-to-find-us" class="pad-section">
+  <div class="container">
+    <h2 class="text-center">Where To Find Us</h2><hr />
+    <div id="google_map" class="pad-section"><div class="container"></div></div>
+  </div>
+</div>
+<!-- google map -->
+
+
+<!-- /google map -->
+<!-- /fifth section -->
+
+<!-- footer -->
+<footer>
+  <div id="contact" class="pad-section">
+    <div class="container">
+      <h2 class="text-center">Contact Us</h2> <hr />
+      <div class="row text-center">
+        <div class="col-sm-3 col-xs-6">
+          <a href="mailto:chicagoyoungmen@gmail.com"><i class="glyphicon fa fa-envelope"></i></a>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <i class="glyphicon fa fa-facebook"> </i>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <i class="glyphicon fa fa-twitter"> </i>
+          <!-- place description here -->
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <i class="glyphicon fa fa-google-plus"></i>
+        </div>
+        <div>
+          <p class="text-right" style="margin-top: 100px;">Copywrite NAME 2015</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
 
       <!-- Bootstrap core JavaScript
       ================================================== -->
@@ -213,5 +269,5 @@
       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
       <script src="js/ie10-viewport-bug-workaround.js"></script>
     </body>
-  </html>
+    </html>
 

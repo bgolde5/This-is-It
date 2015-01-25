@@ -24,25 +24,44 @@ $(document).ready(function (){
     type:'GET',
     dataType:'JSONP',
     success: function(response){
+ 
 
       for(i=0; i<response.results.length; i++){
-        eventMarkers[i] = new google.maps.Marker({
-          position: new google.maps.LatLng(response.results[i].venue_lat, response.results[i].venue_lon),
-          map: map
-
-      })
-
-      //add event info window
             var name = response.results[i].name;
             var venue_name = response.results[i].venue_name;
             var address1 = response.results[i].venue_address1;
             var event_url = response.results[i].event_url;
             var description = response.results[i].description;
-            var message = '<div id="content"><b>'+name+'</b>'+
-              '<p>Where: '+venue_name+'<br>'+
-              'Address: '+address1+'<br>'+
-              '<a href="'+event_url+'" target="_blank">More Info</a></br>'+
-              description+'</p></div>'
+            var lat = response.results[i].venue_lat;
+            var lon = response.results[i].venue_lon;
+
+        if(response.results[i].name.indexOf("Group") > -1){
+          var image = 'img/group.png';
+        }
+        else if(response.results[i].name.indexOf("Social") > -1){
+          var image = 'img/social.png';
+        }
+        else if(response.results[i].name.indexOf("Service") > -1){
+          var image = 'img/service.png';
+        }
+        else {
+          var image = 'img/other.png';
+        }
+
+        eventMarkers[i] = new google.maps.Marker({
+          position: new google.maps.LatLng(lat, lon),
+          map: map,
+          icon: image
+
+      })
+
+      //add event info window
+
+            var message = '<div id="content"><h1 id="firstHeading">'+name+'</h1>'+
+              '<div id="siteNotice"></div><div id="bodyContent"><p>'+venue_name+'<br>'+
+              '<a href="http://maps.apple.com/?q='+lat+','+lon+'">'+address1+'</a><br>'+
+              '<a href="'+event_url+'" target="_blank">More Info</a></br></p>'+
+              '</div></div>'
         addInfoWindow(eventMarkers[i], message);
     }
   }
@@ -52,10 +71,10 @@ $(document).ready(function (){
 
     var infoWindow = new google.maps.InfoWindow({
       content: message,
-      maxWidth: 600
     });
 
     google.maps.event.addListener(marker, 'click', function () {
+      map.setCenter(marker.getPosition());
     infoWindow.open(map, marker);
   });
   }

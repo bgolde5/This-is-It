@@ -2,9 +2,8 @@
 	font-size: 30px;font-family: 'Permanent Marker', cursive;
 }
 .navbar-default {
-  background-color: #506987;
+  background-color: #424242;
   border-color: transparent;
-  background: rgba(80,105,135,0.8);
 }
 .navbar-default .navbar-brand {
   color: #fff;
@@ -20,24 +19,23 @@
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   text-decoration: none;
-  background-color: #506987;
+  background-color: #3299BB;
   color: #fff;
-  background: rgba(61,80,103,0.5);
   border-radius:0;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #fff;
-  background-color: #475d77;
+  background-color: #3299BB;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   color: #fff;
-  background-color: #475d77;
+  background-color: #3299BB;
 }
 .navbar-default .navbar-toggle {
-  border-color: #475d77;
+  border-color: #3299BB;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #475d77;
+  background-color: #3299BB;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #fff;
@@ -62,7 +60,7 @@
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #fff;
-    background-color: #475d77;
+    background-color: #3299BB;
   }
 }
 /*
@@ -124,7 +122,7 @@ html, body {
 
 /* additional sections */
 #home {
-  background: url(http://community.sacredfire.org/wp-content/uploads/2012/02/Initiatesfiesya2009-Group-SacredAwakening-NA.jpg) no-repeat center center fixed; 
+  background: url(http://www.secretsofthefed.com/wp-content/uploads/2013/04/The-Night-Sky-Wallpaper.jpg) no-repeat center center fixed; 
   display: table;
   height: 100%;
   position: relative;
@@ -139,12 +137,21 @@ html, body {
   opacity: 0.85;
   color:black;
 }
+.btn:hover {
+  background-color: #3299BB;
+  color: white;
+}
 
 #who-we-are {
+  background-color: #E9E9E9;
+}
+#who-we-are .panel-heading{
+  background-color: #3299BB;
+  color: white;
 }
 
 #what-we-offer {
-  background-color: #506987;
+  background-color: #424242;
   color: #ffffff;
 }
 #what-we-offer .glyphicon {
@@ -170,22 +177,48 @@ html, body {
   background-size: cover;
 }
 #how-it-works {
-	background: url(http://upload.wikimedia.org/wikipedia/commons/0/0c/GoldenGateBridge-001.jpg);
-	background-size: 100%;
-	height:75%;
+  background: url(http://www.secretsofthefed.com/wp-content/uploads/2013/04/The-Night-Sky-Wallpaper.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 75%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
 }
 
 #how-it-works .panel {
   opacity: 0.85;
+  color: black;
+}
+#how-it-works .panel-heading{
+  background-color: #424242;
+  color: white;
+}
+
+#where-to-find-us {
+  background-color: #424242;
+  color: #ffffff;
 }
 
 #google_map {
-  height: 75%;
+  height: 500px;
+  width: 100%;
+  color: black;
 }
 
 #contact {
-  background-color: #506987;
-  color: #ffffff;
+  background: url(http://www.secretsofthefed.com/wp-content/uploads/2013/04/The-Night-Sky-Wallpaper.jpg) no-repeat center center fixed; 
+  display: table;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
 }
 #contact .glyphicon {
   border: 2px solid #FFFFFF;
@@ -203,6 +236,6 @@ footer .glyphicon {
   font-size: 60px;
 }
 footer .glyphicon:hover {
-  background-color: #768fae;
+  background-color: #3299BB;
   color: white;
 }
