@@ -1,11 +1,11 @@
 $(document).ready(function (){
 
   // create a LatLng object containing the coordinate for the center of the map
-  var latlng = new google.maps.LatLng(41.876949, -87.624352);
+  var latlng = new google.maps.LatLng(42.877742, -97.380979);
 
   // prepare the map properties
   var options = {
-    zoom: 13,
+    zoom: 3,
     center: latlng,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     navigationControl: true,
@@ -27,6 +27,9 @@ $(document).ready(function (){
  
 
       for(i=0; i<response.results.length; i++){
+        //var pass = checkLatLon(lat,lon,response)
+        pass = 1;
+        if(pass == 1){
             var name = response.results[i].name;
             var venue_name = response.results[i].venue_name;
             var address1 = response.results[i].venue_address1;
@@ -65,7 +68,10 @@ $(document).ready(function (){
         addInfoWindow(eventMarkers[i], message);
     }
   }
+    var markerCluster = new MarkerClusterer(map, eventMarkers);
+  }
   });
+  
 
   function addInfoWindow(marker, message) {
 
@@ -77,5 +83,18 @@ $(document).ready(function (){
       map.setCenter(marker.getPosition());
     infoWindow.open(map, marker);
   });
+  }
+
+//TODO figure out algorithm for eliminating multiple markers on top of each other
+  function checkLatLon(prevLat, prevLon, response){
+    var oneHunFt = 22.86/3600;
+    currLat = response.results[i].venue_lat;
+    currLon = response.results[i].venue_lon;
+    if(((prevLat >= currLat + oneHunFt) || (prevLat <= currLat - oneHunFt)) || ((prevLon >= currLon + oneHunFt) || (prevLon <= currLon - oneHunFt))){
+      return 0;
+    }
+    else {
+      return 1;
+    }
   }
 });

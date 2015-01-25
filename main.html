@@ -27,6 +27,23 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
   <script src="js/main.js"></script>
 
+  <!-- smooth scroll -->
+  <script>$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+  </script>
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar-default">
@@ -48,6 +65,7 @@
           <li><a role="presentation" href="#who-we-are">Who We Are</a></li>
           <li><a role="presentation" href="#what-we-offer">What We Offer</a></li>
           <li><a role="presentation" href="#how-it-works">How It Works</a></li>
+          <li><a role="presentation" href="#participate">How To Participate</a></li>
           <li><a role="presentation" href="#where-to-find-us">Where To Find Us</a></li>
           <li><a role="presentation" href="#contact">Contact Us</a></li>
         </ul>
@@ -65,8 +83,8 @@
       <div class="container">
         <div class="panel panel-default">
           <div class="panel-body lead">
-            <h1>Live the life you choose to live.</h1>
-            <h3>Men around the United States are joining our powerful community to create new possibilities in their lives and you can too!</h3>
+            <h1>Live the life of your choosing.</h1>
+            <h3>Young men around the United States are joining our powerful community to create new possibilities in their lives </h3>
             <a href="#who-we-are" class="btn btn-default btn-lg">Who We Are</a>
           </div>
         </div>
@@ -80,7 +98,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <img src="http://photos4.meetupstatic.com/photos/event/d/8/4/9/highres_433195369.jpeg" alt="" class="img-thumbnail"/>
+          <img src="img/whoweare.jpeg" alt="" class="img-thumbnail"/>
         </div>
         <div class="col-sm-6 text-center">
           <div class="panel panel-default">
@@ -88,8 +106,8 @@
               <h2 class="panel-titler">Who We Are</h2>
             </div>
             <div class="panel-body lead">
-              We are about creating life long friendships, having fun with peers, and winning at life. We provide young men with the opportunity to be actively supported, challenged to excel in their careers, encouraged to strengthen and build new relationships, motivated to achieve personal goals, and more. We are a group of young men, ages 18-35ish, who cheer each other on and don't take each other's bullshit at the same time. In this group we truly look out for each other and want to do the same with you. If you're interested, we welcome young men from all walks of life.
-            </div>
+              We are a group of young men ages 18-35ish who are deidicated to creating abundance in our lives and the lives of others around the world by participating in an active community that supports, challenges, believes in, and laughs with one another. We do this by being adventerous during social outings, pushing ourselves during group meetings, and/or taking care of those around us through service projects.
+              </div>
           </div>
         </div>
       </div>
@@ -132,7 +150,7 @@
     <div class="container">
       <h2 class="text-center">How It Works</h2>
       <div class="row">
-        <h3 class="text-center">Our community is broken down into mulitple levels of involvement.</h3>
+        <h3 class="text-center">Our community is broken down into mulitple types and levels of involvement.</h3>
         <div class="col-sm-4">
           <div class="panel panel-default">
             <div class="panel-heading">
@@ -180,7 +198,7 @@
               <h2 class="panel-title">Retreat</h2>
             </div>
             <div class="panel-body lead">
-              Retreat is the time to step out of your everyday life and gather your thoughts. Retreat consists of weekend or longer destination events such as camping or renting a cabin for the weekend.
+              Retreat is the time to step out of your everyday life and gather your thoughts. Retreat consists of weekend or longer destination events such as camping or renting a cabin.
             </div>
             <div class="panel-footer">
               <b style="color:purple">Level 2</b>
@@ -193,7 +211,7 @@
               <h2 class="panel-title">Weekend</h2>
             </div>
             <div class="panel-body lead">
-              Weekend is an extension of group. It's two day powerful experience that provides tools to help you further enhance your relationships, deepen your communication, have breakthroughs in your career, and more.
+              Weekend is an extension of group. It's a two day powerful experience that provides tools to help you further enhance your relationships, deepen your communication, have breakthroughs in your career, and more.
             </div>
             <div class="panel-footer">
               <b style="color:red">Level 2</b>
@@ -206,7 +224,7 @@
               <h2 class="panel-title">Create</h2>
             </div>
             <div class="panel-body lead">
-              Create is the next step after Service. In create you will begin the process of designing your own community service project that you can bring into the world.
+              Create is the next step after Service. In Create you will begin the process of designing your own project with the intention of sharing it with the world.
             </div>
             <div class="panel-footer">
               <b style="color:green">Level 2</b>
@@ -220,18 +238,40 @@
 </div>
 <!-- /fourth section -->
 
-<!-- fifth section - Where To Find Us -->
+<!-- second section - Who We Are -->
+<div id="participate" class="pad-section">
+    <div class="container">
+      <h2 class="text-center">How to Participate</h2><hr />
+      <div class="row text-center">
+        <div class="col-sm-3 col-xs-6">
+          <a href="http://www.meetup.com/chicagoyoungmen" target="_blank">
+          <i class="glyphicon fa fa-plug"> </i></a>
+          <h4>Step 1</h4>
+          <p>Get plugged in. Click the image above to sign up through meetup</p></div>
+        <div class="col-sm-3 col-xs-6">
+          <i class="glyphicon fa fa-pencil-square"> </i>
+            <h4>Step 2</h4>
+          <p>RSVP for an event</p></div>
+        <div class="col-sm-3 col-xs-6">
+          <i class="glyphicon fa fa-thumbs-o-up"> </i>
+          <h4>Step 3</h4>
+          <p>Show up</p></div>
+          <div class="col-sm-3 col-xs-6"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NJR8H4AE48KUA" target="_blank">
+          <i class="glyphicon fa fa-dollar"> </i></a>
+          <h4>Alternative</h4>
+          <p>Donate</p></div>
+      </div>
+  </div>
+<!-- /second section -->
+
+<!-- sixth section - Where To Find Us -->
 <div id="where-to-find-us" class="pad-section">
   <div class="container">
-    <h2 class="text-center">Where To Find Us</h2><hr />
+    <h2 class="text-center">Where To Find Us</h2>
     <div id="google_map" class="pad-section"><div class="container"></div></div>
   </div>
 </div>
-<!-- google map -->
-
-
-<!-- /google map -->
-<!-- /fifth section -->
+<!-- /sixth section -->
 
 <!-- footer -->
 <footer>
@@ -266,6 +306,8 @@
       <!-- Placed at the end of the document so the pages load faster -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
+      <script src="js/markerclusterer_compiled.js"></script>
+      <script src="js/oms.min.js"></script>
       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
       <script src="js/ie10-viewport-bug-workaround.js"></script>
     </body>
